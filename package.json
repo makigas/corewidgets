@@ -24,6 +24,8 @@
     "grunt-contrib-copy": "^0.8.2",
     "grunt-contrib-cssmin": "^0.14.0",
     "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-po2mo": "^0.1.2",
+    "grunt-pot": "^0.2.1",
     "grunt-rsync": "^1.0.1",
     "load-grunt-tasks": "^3.4.0"
   }

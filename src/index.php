@@ -33,7 +33,7 @@
  * License:     GPL3
  * License URI: https://www.gnu.org/licenses/gpl.html
  * Domain Path: /languages
- * Text Domain: makigas
+ * Text Domain: makigas-corewidgets
  */
 
 defined('ABSPATH') or die('Please, do not execute this script directly.');
@@ -53,6 +53,11 @@ spl_autoload_register(function( $class_name ) {
     } else {
         die('Error: class ' . $class_name . ' not found.');
     }
+});
+
+// Load translations.
+add_action( 'plugins_loaded', function() {
+	load_plugin_textdomain( 'makigas-corewidgets', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
 });
 
 add_action('widgets_init', function() {

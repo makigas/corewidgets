@@ -32,9 +32,9 @@ class TextImageWidget extends \WP_Widget {
     public function __construct() {
         $widget_ops = array(
             'classname' => 'makigas-text-image',
-            'description' => __('Presents a text block and an image, horizontally aligned', 'makigas')
+            'description' => __('Presents a text block and an image, horizontally aligned', 'makigas-corewidgets')
         );
-        parent::__construct('makigas-text-image', __('Text and Image', 'makigas'), $widget_ops);
+        parent::__construct('makigas-text-image', __('Text and Image', 'makigas-corewidgets'), $widget_ops);
     }
 
     /**
@@ -99,29 +99,29 @@ class TextImageWidget extends \WP_Widget {
         $textarea = esc_textarea($instance['text']);
         $image = sanitize_text_field($instance['image']);
         ?>
-        <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
+        <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:','makigas-corewidgets'); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
 
-        <p><label for="<?php echo $this->get_field_id('text'); ?>"><?php _e('Content:'); ?></label>
+        <p><label for="<?php echo $this->get_field_id('text'); ?>"><?php _e('Content:','makigas-corewidgets'); ?></label>
             <textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('text'); ?>"><?php echo $textarea; ?></textarea></p>
 
-        <p><label for="<?php echo $this->get_field_id('image'); ?>"><?php _e('Image:'); ?></label>
+        <p><label for="<?php echo $this->get_field_id('image'); ?>"><?php _e('Image:','makigas-corewidgets'); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id('image'); ?>" name="<?php echo $this->get_field_name('image'); ?>" type="text" value="<?php echo esc_attr($image); ?>" /></p>
 
         <p>
-            <label for="<?php echo esc_attr($this->get_field_id('desktop_order')); ?>"><?php _e('Desktop:'); ?></label>
+            <label for="<?php echo esc_attr($this->get_field_id('desktop_order')); ?>"><?php _e('Desktop:','makigas-corewidgets'); ?></label>
             <select name="<?php echo esc_attr($this->get_field_name('desktop_order')); ?>" id="<?php echo esc_attr($this->get_field_id('desktop_order')); ?>" class="widefat">
-                <option value="text_first"<?php selected($instance['desktop_order'], 'text_first'); ?>><?php _e('Text First'); ?></option>
-                <option value="image_first"<?php selected($instance['desktop_order'], 'image_first'); ?>><?php _e('Image First'); ?></option>
+                <option value="text_first"<?php selected($instance['desktop_order'], 'text_first'); ?>><?php _e('Text First', 'makigas-corewidgets'); ?></option>
+                <option value="image_first"<?php selected($instance['desktop_order'], 'image_first'); ?>><?php _e('Image First', 'makigas-corewidgets'); ?></option>
             </select>
         </p>
 
         <p>
-            <label for="<?php echo esc_attr($this->get_field_id('mobile_order')); ?>"><?php _e('Desktop:'); ?></label>
+            <label for="<?php echo esc_attr($this->get_field_id('mobile_order')); ?>"><?php _e('Mobile:','makigas-corewidgets'); ?></label>
             <select name="<?php echo esc_attr($this->get_field_name('mobile_order')); ?>" id="<?php echo esc_attr($this->get_field_id('mobile_order')); ?>" class="widefat">
-                <option value="text_first"<?php selected($instance['mobile_order'], 'text_first'); ?>><?php _e('Text First'); ?></option>
-                <option value="image_first"<?php selected($instance['mobile_order'], 'image_first'); ?>><?php _e('Image First'); ?></option>
-                <option value="only_text"<?php selected($instance['mobile_order'], 'only_text'); ?>><?php _e('Only Text'); ?></option>
+                <option value="text_first"<?php selected($instance['mobile_order'], 'text_first'); ?>><?php _e('Text First','makigas-corewidgets'); ?></option>
+                <option value="image_first"<?php selected($instance['mobile_order'], 'image_first'); ?>><?php _e('Image First','makigas-corewidgets'); ?></option>
+                <option value="only_text"<?php selected($instance['mobile_order'], 'only_text'); ?>><?php _e('Only Text','makigas-corewidgets'); ?></option>
             </select>
         </p>
         <?php

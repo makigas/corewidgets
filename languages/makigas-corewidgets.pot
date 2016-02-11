@@ -1,0 +1,60 @@
+# makigas-corewidgets
+# Copyright (C) 2016 makigas
+# This file is distributed under the same license as the makigas-corewidgets package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: makigas-corewidgets 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-11 20:35+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/lib/Makigas/CoreWidgets/TextImageWidget.php:35
+msgid "Presents a text block and an image, horizontally aligned"
+msgstr ""
+
+#: src/lib/Makigas/CoreWidgets/TextImageWidget.php:37
+msgid "Text and Image"
+msgstr ""
+
+#: src/lib/Makigas/CoreWidgets/TextImageWidget.php:102
+msgid "Title:"
+msgstr ""
+
+#: src/lib/Makigas/CoreWidgets/TextImageWidget.php:105
+msgid "Content:"
+msgstr ""
+
+#: src/lib/Makigas/CoreWidgets/TextImageWidget.php:108
+msgid "Image:"
+msgstr ""
+
+#: src/lib/Makigas/CoreWidgets/TextImageWidget.php:112
+msgid "Desktop:"
+msgstr ""
+
+#: src/lib/Makigas/CoreWidgets/TextImageWidget.php:114
+#: src/lib/Makigas/CoreWidgets/TextImageWidget.php:122
+msgid "Text First"
+msgstr ""
+
+#: src/lib/Makigas/CoreWidgets/TextImageWidget.php:115
+#: src/lib/Makigas/CoreWidgets/TextImageWidget.php:123
+msgid "Image First"
+msgstr ""
+
+#: src/lib/Makigas/CoreWidgets/TextImageWidget.php:120
+msgid "Mobile:"
+msgstr ""
+
+#: src/lib/Makigas/CoreWidgets/TextImageWidget.php:124
+msgid "Only Text"
+msgstr ""
